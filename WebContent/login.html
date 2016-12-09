@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Log In</title>
+</head>
+<body>
+<div align ="center" style="margin:10px;">
+	<fieldset>
+		<legend>Login and Register</legend>
+			<br/>
+			<form action="/login/RegisterServlet" method="post">
+				<table>
+					<tr>
+						<td>username: </td>
+						<td><input type="text" name="username" style="width:200px;" value="Email, Phone.." 
+								onfocus="javascript:if(this.value=='Email, Phone..')this.value='';"/></td>
+					</tr>
+					<tr>
+						<td>password: </td>
+						<td><input type="password" name="password" style="width:200px;" /></td>
+						
+					</tr>
+					<tr>
+						<td>密码提示: </td>
+						<td>6-18位数字、字母、下划线。</td>
+					</tr>
+					<tr>
+						<td align="center"><input type="submit" name="submit" style="width:80px;" value = "Register" /></td>
+					</tr>
+				</table>
+			</form>
+			<br/><br/><br/>
+			<form action="/login/LoginServlet" method="post">
+				<table>
+					<tr>
+						<td>username: </td>
+						<td><input type="text" name="username" style="width:200px;" /></td>
+					</tr>
+					<tr>
+						<td>password: </td>
+						<td><input type="password" name="password" style="width:200px;" /></td>
+					
+					</tr>
+					<tr>
+						<td align="center"><input type="submit" name="submit" style="width:80px;" value = "Login" /></td>
+					</tr>
+				</table>
+			</form>		
+		</fieldset>
+	</div>
+</body>
+</html>
